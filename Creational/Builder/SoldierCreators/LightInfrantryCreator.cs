@@ -7,7 +7,8 @@ namespace DesignPatterns.Creational.Builder.SoldierCreators
         public LightInfrantryCreator() => _soldier = new LightInfrantrySoldier();
         public override Soldier Reset() => new LightInfrantrySoldier();
 
-        public override LightInfrantryCreator Gun() {
+        public override LightInfrantryCreator Gun()
+        {
             _soldier.ChooseGun("Air strike");
             return this;
         }
