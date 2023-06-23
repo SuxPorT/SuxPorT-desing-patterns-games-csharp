@@ -1,7 +1,6 @@
 ﻿using DesignPatterns.Structural.Bridge;
 using DesignPatterns.Structural.Bridge.Blocks;
 using DesignPatterns.Structural.Bridge.Colors;
-using System;
 
 namespace DesignPatterns.Structural.Brdige
 {

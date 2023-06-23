@@ -6,9 +6,6 @@ namespace DesignPatterns.Structural.Bridge.Blocks
     {
         public IColor IColor { get; set; }
 
-        public string GoDown()
-        {
-            return $"U - {IColor.Color()}";
-        }
+        public string GoDown() => $"U - {IColor.Color()}";
     }
 }

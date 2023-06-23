@@ -4,7 +4,7 @@ namespace DesignPatterns.Structural.Flyweight
 {
     public class Flyweight
     {
-        private Dictionary<string, KoopaTroopa> turtlesList = new();
+        private readonly Dictionary<string, KoopaTroopa> turtlesList = new();
 
         public KoopaTroopa GetTurtle(string color)
         {

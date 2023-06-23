@@ -2,7 +2,7 @@
 {
     public class Cody : ICharacter
     {
-        private List<IObserver> _enemies = new();
+        private readonly List<IObserver> _enemies = new();
         public int health = 100;
 
         public void NotifyCharacters()
