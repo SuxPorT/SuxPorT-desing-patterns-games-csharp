@@ -1,8 +1,7 @@
-﻿namespace DesignPatterns.Creational.AbstractFactory.Factories
+﻿namespace DesignPatterns.Creational.AbstractFactory.Factories;
+
+public interface IBaseFactory
 {
-    public interface IBaseFactory
-    {
-        void CreateBase();
-        void ShowRace();
-    }
+    void CreateBase();
+    void ShowRace();
 }

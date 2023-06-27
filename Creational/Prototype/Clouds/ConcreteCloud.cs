@@ -1,20 +1,19 @@
-﻿namespace DesignPatterns.Creational.Prototype.Clouds
+﻿namespace DesignPatterns.Creational.Prototype.Clouds;
+
+public class ConcreteCloud : BaseCloud
 {
-    public class ConcreteCloud : BaseCloud
+    private readonly string FillColor, OutlineColor;
+
+    public ConcreteCloud(string fillColor, string outlineColor)
     {
-        private readonly string FillColor, OutlineColor;
+        FillColor = fillColor;
+        OutlineColor = outlineColor;
+    }
 
-        public ConcreteCloud(string fillColor, string outlineColor)
-        {
-            FillColor = fillColor;
-            OutlineColor = outlineColor;
-        }
+    public override BaseCloud Clone()
+    {
+        Console.WriteLine($"The cloned cloud has fill {FillColor} and outline {OutlineColor}");
 
-        public override BaseCloud Clone()
-        {
-            Console.WriteLine($"The cloned cloud has fill {FillColor} and outline {OutlineColor}");
-
-            return MemberwiseClone() as BaseCloud;
-        }
+        return (BaseCloud) MemberwiseClone();
     }
 }

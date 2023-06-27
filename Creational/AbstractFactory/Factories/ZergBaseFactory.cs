@@ -1,23 +1,22 @@
 ﻿using DesignPatterns.Creational.AbstractFactory.BaseRaces;
 using DesignPatterns.Creational.AbstractFactory.CoatRaces;
 
-namespace DesignPatterns.Creational.AbstractFactory.Factories
+namespace DesignPatterns.Creational.AbstractFactory.Factories;
+
+public class ZergBaseFactory : IBaseFactory
 {
-    public class ZergBaseFactory : IBaseFactory
+    public ZergBaseFactory() => CreateBase();
+
+    public void CreateBase()
     {
-        public ZergBaseFactory() => CreateBase();
+        var coating = new ZergBaseCoat();
+        coating.Composition();
 
-        public void CreateBase()
-        {
-            var coating = new ZergBaseCoat();
-            coating.Composition();
+        var energy = new ZergBaseEnergy();
+        energy.Composition();
 
-            var energy = new ZergBaseEnergy();
-            energy.Composition();
-
-            Console.WriteLine("Zerg base successfully created!");
-        }
-
-        public void ShowRace() => Console.WriteLine("Zerg race");
+        Console.WriteLine("Zerg base successfully created!");
     }
+
+    public void ShowRace() => Console.WriteLine("Zerg race");
 }

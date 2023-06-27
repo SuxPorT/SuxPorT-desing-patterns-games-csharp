@@ -1,15 +1,14 @@
 ﻿using DesignPatterns.Creational.Prototype.Clouds;
 
-namespace DesignPatterns.Creational.Prototype
+namespace DesignPatterns.Creational.Prototype;
+
+public class CloudManager
 {
-    public class CloudManager
-    {
-        private readonly Dictionary<string, BaseCloud> clouds = new();								
+    private readonly Dictionary<string, BaseCloud> clouds = new();								
 		
-        public BaseCloud this[string key]
-        {
-            get { return clouds[key]; }
-            set { clouds.Add(key, value); }
-        }
+    public BaseCloud this[string key]
+    {
+        get { return clouds[key]; }
+        set { clouds.Add(key, value); }
     }
 }

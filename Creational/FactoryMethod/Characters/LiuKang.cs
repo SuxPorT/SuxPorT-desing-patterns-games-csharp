@@ -1,7 +1,6 @@
-﻿namespace DesignPatterns.Creational.FactoryMethod.Characters
+﻿namespace DesignPatterns.Creational.FactoryMethod.Characters;
+
+public class LiuKang : ICharacter
 {
-    public class LiuKang : ICharacter
-    {
-        public void Chosen() => Console.Write("Liu Kang");
-    }
+    public void Chosen() => Console.Write("Liu Kang");
 }

@@ -1,7 +1,6 @@
-﻿namespace DesignPatterns.Creational.FactoryMethod.Characters
+﻿namespace DesignPatterns.Creational.FactoryMethod.Characters;
+
+public interface ICharacter
 {
-    public interface ICharacter
-    {
-        void Chosen();
-    }
+    void Chosen();
 }

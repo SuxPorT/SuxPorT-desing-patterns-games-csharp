@@ -1,7 +1,6 @@
-﻿namespace DesignPatterns.Creational.FactoryMethod.Characters
+﻿namespace DesignPatterns.Creational.FactoryMethod.Characters;
+
+public class Scorpion : ICharacter
 {
-    public class Scorpion : ICharacter
-    {
-        public void Chosen() => Console.Write("Scorpion");
-    }
+    public void Chosen() => Console.Write("Scorpion");
 }

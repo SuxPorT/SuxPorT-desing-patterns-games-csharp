@@ -1,23 +1,22 @@
 ﻿using DesignPatterns.Creational.AbstractFactory.BaseRaces;
 using DesignPatterns.Creational.AbstractFactory.CoatRaces;
 
-namespace DesignPatterns.Creational.AbstractFactory.Factories
+namespace DesignPatterns.Creational.AbstractFactory.Factories;
+
+public class ProtossBaseFactory : IBaseFactory
 {
-    public class ProtossBaseFactory : IBaseFactory
+    public ProtossBaseFactory() => CreateBase();
+
+    public void CreateBase()
     {
-        public ProtossBaseFactory() => CreateBase();
+        var coating = new ProtossBaseCoat();
+        coating.Composition();
 
-        public void CreateBase()
-        {
-            var coating = new ProtossBaseCoat();
-            coating.Composition();
+        var energy = new ProtossBaseEnergy();
+        energy.Composition();
 
-            var energy = new ProtossBaseEnergy();
-            energy.Composition();
-
-            Console.WriteLine("Protoss base successfully created!");
-        }
-
-        public void ShowRace() => Console.WriteLine("Protoss race");
+        Console.WriteLine("Protoss base successfully created!");
     }
+
+    public void ShowRace() => Console.WriteLine("Protoss race");
 }
