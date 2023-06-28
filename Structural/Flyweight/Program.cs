@@ -1,28 +1,28 @@
 ﻿using DesignPatterns.Structural.Flyweight.Turtles;
 
-namespace DesignPatterns.Structural.Flyweight
+namespace DesignPatterns.Structural.Flyweight;
+
+public class Program
 {
-    public class Program
+    public static void Main()
     {
-        public static void Main(string[] args)
+        var flyweight = new TurtleFlyweight();
+        KoopaTroopa turtle;
+
+        while (true)
         {
-            var flyweight = new Flyweight();
-            KoopaTroopa turtle;
+            Console.Write("Write a color: ");
+            var color = Console.ReadLine();
 
-            while (true)
+            try
             {
-                Console.Write("Write a color: ");
-                var color = Console.ReadLine();
-
-                turtle = flyweight.GetTurtle(color);
-                if (turtle == null)
-                {
-                    Console.WriteLine($"Turtle with color \"{color}\" not found");
-                    return;
-                }
-
-                turtle.Show(color);
+                turtle = flyweight.GetTurtle(color!);
+                turtle.Show(color!);
                 Console.WriteLine();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
             }
         }
     }

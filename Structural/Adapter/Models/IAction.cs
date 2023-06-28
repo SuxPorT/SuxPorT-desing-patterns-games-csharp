@@ -1,8 +1,7 @@
-﻿namespace DesignPatterns.Structural.Adapter.Actions
+﻿namespace DesignPatterns.Structural.Adapter.Actions;
+
+public interface IAction
 {
-    public interface IAction
-    {
-        void Walk(string player);
-        void Shoot();
-    }
+    void Walk(string player);
+    void Shoot();
 }

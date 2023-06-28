@@ -1,7 +1,6 @@
-﻿namespace DesignPatterns.Structural.Bridge.Colors
+﻿namespace DesignPatterns.Structural.Bridge.Colors;
+
+public class Orange : IColor
 {
-    public class Orange : IColor
-    {
-        public string Color() => "Orange";
-    }
+    public string Color() => "Orange";
 }

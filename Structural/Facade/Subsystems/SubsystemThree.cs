@@ -1,8 +1,7 @@
-﻿namespace DesignPatterns.Structural.Facade.Subsystems
+﻿namespace DesignPatterns.Structural.Facade.Subsystems;
+
+public class SubsystemThree
 {
-    public class SubsystemThree
-    {
-        public void Responsibility()
-        => Console.WriteLine("Train warriors");
-    }
+    public void Responsibility()
+    => Console.WriteLine("Train warriors");
 }

@@ -1,8 +1,7 @@
-﻿namespace DesignPatterns.Structural.Facade.Subsystems
+﻿namespace DesignPatterns.Structural.Facade.Subsystems;
+
+public class SubsystemTwo
 {
-    public class SubsystemTwo
-    {
-        public void Responsibility()
-        => Console.WriteLine("Produce weaponry for warriors");
-    }
+    public void Responsibility()
+    => Console.WriteLine("Produce weaponry for warriors");
 }

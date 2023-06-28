@@ -1,7 +1,6 @@
-﻿namespace DesignPatterns.Structural.Proxy.Stages
+﻿namespace DesignPatterns.Structural.Proxy.Stages;
+
+public interface IStage
 {
-    public interface IStage
-    {
-        string Play();
-    }
+    string Play();
 }

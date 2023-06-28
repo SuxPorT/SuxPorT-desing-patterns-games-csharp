@@ -1,7 +1,6 @@
-﻿namespace DesignPatterns.Structural.Bridge.Colors
+﻿namespace DesignPatterns.Structural.Bridge.Colors;
+
+public interface IColor
 {
-    public interface IColor
-    {
-        string Color();
-    }
+    string Color();
 }

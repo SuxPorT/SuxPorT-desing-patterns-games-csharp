@@ -1,15 +1,12 @@
-﻿namespace DesignPatterns.Structural.Decorator.Armors
+﻿namespace DesignPatterns.Structural.Decorator.Armors;
+
+public class Helmet : DecoratorArmor
 {
-    public class Helmet : DecoratorArmor
-    {
-        public new readonly string _description = "Helmet, ";
-        private readonly BaseArmor _baseArmor;
+    public new readonly string _description = "Helmet, ";
+    private readonly BaseArmor _baseArmor;
 
-        public Helmet(BaseArmor baseArmor) => _baseArmor = baseArmor;
+    public Helmet(BaseArmor baseArmor) => _baseArmor = baseArmor;
 
-        public override string Description
-        {
-            get { return _baseArmor.Description + _description; }
-        }
-    }
+    public override string Description
+    { get { return _baseArmor.Description + _description; } }
 }

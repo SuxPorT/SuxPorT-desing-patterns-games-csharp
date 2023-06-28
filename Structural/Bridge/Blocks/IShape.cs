@@ -1,10 +1,9 @@
 ﻿using DesignPatterns.Structural.Bridge.Colors;
 
-namespace DesignPatterns.Structural.Bridge.Blocks
+namespace DesignPatterns.Structural.Bridge.Blocks;
+
+public interface IShape
 {
-    public interface IShape
-    {
-        string GoDown();
-        IColor IColor { get; set; }
-    }
+    string GoDown();
+    IColor IColor { get; set; }
 }
