@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.Behavioural.ChainOfResposnability.Characters;
+﻿namespace DesignPatterns.Behavioural.ChainOResponsability.Characters;
 
 public abstract class Manipulator
 {

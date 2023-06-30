@@ -1,4 +1,4 @@
-﻿using DesignPatterns.Behavioural.ChainOfResposnability.Characters;
+﻿using DesignPatterns.Behavioural.ChainOResponsability.Characters;
 
 namespace DesignPatterns.Behavioural.ChainOResponsability;
 

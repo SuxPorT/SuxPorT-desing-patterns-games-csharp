@@ -45,7 +45,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Command", "Behavioural\Comm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy", "Behavioural\Strategy\Strategy.csproj", "{AD6AAD06-6C18-4FEF-9D09-23F41F5A6336}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResposnability", "Behavioural\ChainOfResposnability\ChainOfResposnability.csproj", "{3FCFED4E-7F55-43BA-9650-F6E497E9443B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsability", "Behavioural\ChainOfResponsability\ChainOfResponsability.csproj", "{3FCFED4E-7F55-43BA-9650-F6E497E9443B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iterator", "Behavioural\Iterator\Iterator.csproj", "{1F9A477C-97E7-4E81-80A7-A642187895BA}"
 EndProject

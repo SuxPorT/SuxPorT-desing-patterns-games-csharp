@@ -1,10 +1,10 @@
-﻿namespace DesignPatterns.Behavioural.ChainOfResposnability.Characters;
+﻿namespace DesignPatterns.Behavioural.ChainOResponsability.Characters;
 
-public class CharacterB : Manipulator
+public class CharacterC : Manipulator
 {
     public override void CallUp(int powerAmount)
     {
-        if (powerAmount >= 10 && powerAmount < 20)
+        if (powerAmount >= 20 && powerAmount < 30)
             Console.WriteLine($"{GetType().Name} called up to a force of " +
                 $"{powerAmount} power amount");
         else
