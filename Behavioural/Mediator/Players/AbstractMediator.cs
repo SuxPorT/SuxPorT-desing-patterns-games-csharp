@@ -1,7 +1,6 @@
-﻿namespace DesignPatterns.Behavioural.Mediator.Players
+﻿namespace DesignPatterns.Behavioural.Mediator.Players;
+
+public abstract class AbstractMediator
 {
-    public abstract class AbstractMediator
-    {
-        public abstract void Send(string message, Player player);
-    }
+    public abstract void Send(string message, Player player);
 }

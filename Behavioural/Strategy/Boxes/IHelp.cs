@@ -1,7 +1,6 @@
-﻿namespace DesignPatterns.Behavioural.Strategy.Boxes
+﻿namespace DesignPatterns.Behavioural.Strategy.Boxes;
+
+public interface IHelp
 {
-    public interface IHelp
-    {
-        string ToHelp();
-    }
+    string ToHelp();
 }

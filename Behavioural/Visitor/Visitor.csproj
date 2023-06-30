@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>DesignPatterns.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <RootNamespace>DesignPatterns.Behavioural.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
   </PropertyGroup>
 
 </Project>

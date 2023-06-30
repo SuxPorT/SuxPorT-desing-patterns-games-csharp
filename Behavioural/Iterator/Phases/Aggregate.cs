@@ -1,28 +1,24 @@
-﻿namespace DesignPatterns.Behavioural.Iterator.Phases
+﻿namespace DesignPatterns.Behavioural.Iterator.Phases;
+
+public class Aggregate : IAggregate
 {
-    public class Aggregate : IAggregate
+    readonly List<string> Collection = null;
+
+    public Aggregate() => Collection = new List<string>();
+
+    public IIterator GetIterator() => new PhaseIterator(this);
+
+    public string this[int indexItem]
     {
-        readonly List<string> Collection = null;
-
-        public Aggregate() => Collection = new List<string>();
-
-        public IIterator GetIterator() => new PhaseIterator(this);
-
-        public string this[int indexItem]
+        get
         {
-            get
-            {
-                if (indexItem < Collection.Count)
-                    return Collection[indexItem];
-                else
-                    return string.Empty;
-            }
-            set { Collection.Add(value); }
+            if (indexItem < Collection.Count)
+                return Collection[indexItem];
+            else
+                return string.Empty;
         }
-
-        public int Counter
-        {
-            get { return Collection.Count; }
-        }
+        set { Collection.Add(value); }
     }
+
+    public int Counter { get { return Collection.Count; } }
 }

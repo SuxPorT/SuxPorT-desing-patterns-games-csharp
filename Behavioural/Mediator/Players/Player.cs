@@ -1,9 +1,8 @@
-﻿namespace DesignPatterns.Behavioural.Mediator.Players
-{
-    public class Player
-    {
-        protected AbstractMediator PlayerMediator;
+﻿namespace DesignPatterns.Behavioural.Mediator.Players;
 
-        public Player(AbstractMediator mediator) => PlayerMediator = mediator;
-    }
+public class Player
+{
+    protected AbstractMediator PlayerMediator;
+
+    public Player(AbstractMediator mediator) => PlayerMediator = mediator;
 }

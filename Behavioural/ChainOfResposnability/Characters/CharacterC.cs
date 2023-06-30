@@ -1,14 +1,13 @@
-﻿namespace DesignPatterns.Behavioural.ChainOfResposnability.Characters
+﻿namespace DesignPatterns.Behavioural.ChainOfResposnability.Characters;
+
+public class CharacterC : Manipulator
 {
-    public class CharacterC : Manipulator
+    public override void CallUp(int powerAmount)
     {
-        public override void CallUp(int powerAmount)
-        {
-            if (powerAmount >= 20 && powerAmount < 30)
-                Console.WriteLine($"{GetType().Name} called up to a force of " +
-                    $"{powerAmount} power amount");
-            else
-                successor?.CallUp(powerAmount);
-        }
+        if (powerAmount >= 20 && powerAmount < 30)
+            Console.WriteLine($"{GetType().Name} called up to a force of " +
+                $"{powerAmount} power amount");
+        else
+            successor?.CallUp(powerAmount);
     }
 }

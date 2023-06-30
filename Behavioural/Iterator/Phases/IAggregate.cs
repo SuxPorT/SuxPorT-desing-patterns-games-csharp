@@ -1,9 +1,8 @@
-﻿namespace DesignPatterns.Behavioural.Iterator.Phases
+﻿namespace DesignPatterns.Behavioural.Iterator.Phases;
+
+public interface IAggregate
 {
-    public interface IAggregate
-    {
-        IIterator GetIterator();
-        string this[int indexItem] { set; get; }
-        int Counter { get; }
-    }
+    IIterator GetIterator();
+    string this[int indexItem] { set; get; }
+    int Counter { get; }
 }

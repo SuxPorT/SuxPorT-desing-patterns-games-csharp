@@ -1,4 +1,3 @@
-﻿namespace DesignPatterns.Behavioural.Interpreter.Weapons
-{
-    public interface ITool : IExpression { }
-}
+﻿namespace DesignPatterns.Behavioural.Interpreter.Weapons;
+
+public interface ITool : IExpression { }

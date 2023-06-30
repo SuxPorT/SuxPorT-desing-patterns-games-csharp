@@ -1,8 +1,7 @@
-﻿namespace DesignPatterns.Behavioural.Observer.Characters
+﻿namespace DesignPatterns.Behavioural.Observer.Characters;
+
+public interface ICharacter
 {
-    public interface ICharacter
-    {
-        void RegisterObserver(IObserver observer);
-        void NotifyCharacters();
-    }
+    void RegisterObserver(IObserver observer);
+    void NotifyCharacters();
 }

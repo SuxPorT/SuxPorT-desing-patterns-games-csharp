@@ -1,12 +1,11 @@
-﻿namespace DesignPatterns.Behavioural.Command.RobotControl
+﻿namespace DesignPatterns.Behavioural.Command.RobotControl;
+
+public class SimpleCommand : ICommand
 {
-    public class SimpleCommand : ICommand
-    {
-        private readonly string _request = string.Empty;
+    private readonly string _request = string.Empty;
 
-        public SimpleCommand(string solicitacao) => _request = solicitacao;
+    public SimpleCommand(string solicitacao) => _request = solicitacao;
 
-        public void Execute()
-        => Console.WriteLine($"I'm executing a simple command from {_request}");
-    }
+    public void Execute()
+    => Console.WriteLine($"I'm executing a simple command from {_request}");
 }

@@ -1,7 +1,6 @@
-﻿namespace DesignPatterns.Visitor.Game
+﻿namespace DesignPatterns.Behavioural.Visitor.Game;
+
+public interface IGame
 {
-    public interface IGame
-    {
-        void Visitor(IVisitor visitor);
-    }
+    void Visitor(IVisitor visitor);
 }

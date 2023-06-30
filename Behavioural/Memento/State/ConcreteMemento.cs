@@ -1,11 +1,10 @@
-﻿namespace DesignPatterns.Behavioural.Memento.State
+﻿namespace DesignPatterns.Behavioural.Memento.State;
+
+public class ConcreteMemento
 {
-    public class ConcreteMemento
-    {
-        private readonly string _state;
+    private readonly string _state;
 
-        public string State { get { return _state; } }
+    public string State { get { return _state; } }
 
-        public ConcreteMemento(string state) => _state = state;
-    }
+    public ConcreteMemento(string state) => _state = state;
 }

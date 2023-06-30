@@ -1,22 +1,15 @@
 ﻿using DesignPatterns.Behavioural.Memento.State;
 
-namespace DesignPatterns.Behavioural.Memento {
-    public class Program
+namespace DesignPatterns.Behavioural.Memento;
+
+public class Program
+{
+    public static void Main()
     {
-        public static void Main(string[] args)
-        {
-            var acao = new MementoAction
-            {
-                State = "play"
-            };
+        var action = new MementoAction { State = "play" };
+        var store = new Store { Memento = action.CreateMemento() };
 
-            var store = new Store
-            {
-                Memento = acao.CreateMemento()
-            };
-
-            acao.State = "pause";
-            acao.RestoreState(store.Memento);
-        }
+        action.State = "pause";
+        action.RestoreState(store.Memento);
     }
 }

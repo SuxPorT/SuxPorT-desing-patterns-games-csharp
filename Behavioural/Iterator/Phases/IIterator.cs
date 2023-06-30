@@ -1,10 +1,9 @@
-﻿namespace DesignPatterns.Behavioural.Iterator.Phases
+﻿namespace DesignPatterns.Behavioural.Iterator.Phases;
+
+public interface IIterator
 {
-    public interface IIterator
-    {
-        string FirstItem { get; }
-        string NextItem { get; }
-        string CurrentItem { get; }
-        bool IsReady { get; }
-    }
+    string FirstItem { get; }
+    string NextItem { get; }
+    string CurrentItem { get; }
+    bool IsReady { get; }
 }

@@ -1,8 +1,7 @@
-﻿namespace DesignPatterns.Visitor.Game
+﻿namespace DesignPatterns.Behavioural.Visitor.Game;
+
+public interface IVisitor
 {
-    public interface IVisitor
-    {
-        void Identify(Boss boss);
-        void Identify(GamePhase gamePhase);
-    }
+    void Identify(Boss boss);
+    void Identify(GamePhase gamePhase);
 }

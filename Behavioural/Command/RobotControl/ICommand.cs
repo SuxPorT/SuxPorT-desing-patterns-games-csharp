@@ -1,7 +1,6 @@
-﻿namespace DesignPatterns.Behavioural.Command.RobotControl
+﻿namespace DesignPatterns.Behavioural.Command.RobotControl;
+
+public interface ICommand
 {
-    public interface ICommand
-    {
-        void Execute();
-    }
+    void Execute();
 }

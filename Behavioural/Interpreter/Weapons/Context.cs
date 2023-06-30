@@ -1,7 +1,6 @@
-﻿namespace DesignPatterns.Behavioural.Interpreter.Weapons
+﻿namespace DesignPatterns.Behavioural.Interpreter.Weapons;
+
+public class Context
 {
-    public class Context
-    {
-        public string Content { get; set; }
-    }
+    public string? Content { get; set; }
 }

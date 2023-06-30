@@ -1,10 +1,9 @@
-﻿namespace DesignPatterns.Visitor.Game
-{
-    public class Boss : IGame
-    {
-        public string Name { get; set; }
-        public int HealthPoints { get; set; }
+﻿namespace DesignPatterns.Behavioural.Visitor.Game;
 
-        public void Visitor(IVisitor visitor) => visitor.Identify(this);
-    }
+public class Boss : IGame
+{
+    public string? Name { get; set; }
+    public int HealthPoints { get; set; }
+
+    public void Visitor(IVisitor visitor) => visitor.Identify(this);
 }

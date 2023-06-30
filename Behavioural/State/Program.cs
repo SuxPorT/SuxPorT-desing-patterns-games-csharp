@@ -1,16 +1,15 @@
 ﻿using DesignPatterns.Behavioural.State.Characters;
 
-namespace DesignPatterns.Behavioural.State
+namespace DesignPatterns.Behavioural.State;
+
+public class Program
 {
-    public class Program
+    public static void Main()
     {
-        public static void Main(string[] args)
-        {
-            var context = new Context(new CharacterA());
-            context.Swap();
-            context.Swap();
-            context.Swap();
-            context.Swap();
-        }
+        var context = new Context(new CharacterA());
+        context.Swap();
+        context.Swap();
+        context.Swap();
+        context.Swap();
     }
 }

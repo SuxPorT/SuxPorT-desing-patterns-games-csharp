@@ -1,7 +1,6 @@
-﻿namespace DesignPatterns.Behavioural.Memento.State
+﻿namespace DesignPatterns.Behavioural.Memento.State;
+
+public class Store
 {
-    public class Store
-    {
-        public ConcreteMemento Memento { get; set; }
-    }
+    public ConcreteMemento? Memento { get; set; }
 }
